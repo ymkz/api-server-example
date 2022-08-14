@@ -8,6 +8,9 @@
     "lint": "tsc --noEmit -p tsconfig.json && prettier --check .",
     "format": "prettier --write ."
   },
+  "dependencies": {
+    "fastify": "4.4.0"
+  },
   "devDependencies": {
     "@types/node": "18.7.3",
     "prettier": "2.7.1",

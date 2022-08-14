@@ -9,6 +9,11 @@ const bootstrap = async () => {
     return { status: 'UP' }
   })
 
+  app.get('/user', (_request, _reply) => {
+    console.log(config.api.user)
+    return { user: 'john doe' }
+  })
+
   app.listen({ port: config.port }, (err) => {
     if (err) {
       console.error(err)
